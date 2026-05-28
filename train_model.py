@@ -18,3 +18,6 @@ print(classification_report(y_test, y_pred))
 # Save model
 joblib.dump(model, "student_risk_model.pkl")
 
+import joblib
+
+joblib.dump(model, "student_risk_model.pkl")
