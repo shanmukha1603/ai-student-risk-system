@@ -1,0 +1,13 @@
+<!-- templates/trend.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Trend</title>
+</head>
+<body>
+    <h2>Risk Trend for {{ student_name }}</h2>
+    <img src="{{ url_for('static', filename='trend.png') }}" alt="Risk Trend Graph">
+    <br><br>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teacher Login</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#dbeafe;
+}
+
+.card{
+width:430px;
+background:white;
+padding:45px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.title{
+text-align:center;
+font-size:34px;
+font-weight:700;
+margin-bottom:35px;
+color:#2563eb;
+}
+
+.input-box{
+margin-bottom:22px;
+}
+
+label{
+display:block;
+margin-bottom:10px;
+color:#334155;
+font-weight:500;
+}
+
+input{
+width:100%;
+padding:15px;
+border:1px solid #cbd5e1;
+outline:none;
+border-radius:14px;
+background:white;
+color:#0f172a;
+font-size:15px;
+}
+
+.btn{
+width:100%;
+padding:16px;
+border:none;
+border-radius:16px;
+background:#60a5fa;
+color:white;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+margin-top:10px;
+}
+
+.btn:hover{
+background:#3b82f6;
+transform:translateY(-3px);
+}
+
+</style>
+
+<script>
+
+function login(){
+
+let username=document.getElementById("username").value;
+let password=document.getElementById("password").value;
+
+if(username==="admin" && password==="admin123"){
+
+window.location.href="/teacher_login";
+
+}
+else{
+
+alert("Invalid Username or Password");
+
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="title">
+👨‍🏫 Teacher Login
+</div>
+
+<div class="input-box">
+<label>Username</label>
+<input type="text" id="username">
+</div>
+
+<div class="input-box">
+<label>Password</label>
+<input type="password" id="password">
+</div>
+
+<button class="btn" onclick="login()">
+Login
+</button>
+
+</div>
+
+</body>
+</html>

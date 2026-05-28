@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Student Risk System</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI';
+}
+
+body{
+height:100vh;
+overflow:hidden;
+}
+
+.hero{
+position:relative;
+height:100vh;
+}
+
+.hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(45%);
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+color:white;
+text-align:center;
+}
+
+.overlay h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.overlay p{
+font-size:22px;
+width:70%;
+}
+
+.btn{
+margin-top:35px;
+padding:15px 40px;
+border:none;
+border-radius:40px;
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:white;
+font-size:20px;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<img src="{{ url_for('static', filename='welcome.jpg') }}">
+
+<div class="overlay">
+
+<h1>AI Student Risk Prediction System</h1>
+
+<p>
+Intelligent Academic Monitoring Platform using AI
+</p>
+<!-- ONLY CHANGE BUTTON LINK -->
+<a href="/login" class="btn">Get Started</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
