@@ -8,6 +8,11 @@ app.secret_key = "student_risk_key"
 
 # ---------------- LOAD MODEL ----------------
 
+import os
+
+if not os.path.exists("student_risk_model.pkl"):
+    import train_model
+
 model = joblib.load("student_risk_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
